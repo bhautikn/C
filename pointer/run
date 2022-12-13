@@ -1,0 +1,8 @@
+#!/bin/python3
+import os
+import sys
+filename = sys.argv[1]
+gcc = 'gcc {} '.format(filename)
+os.system(gcc)
+os.system('./a.out')
+os.system('rm a.out')
