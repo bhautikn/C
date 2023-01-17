@@ -121,7 +121,7 @@ void set_potion(int x,int y,int s_length){
 }
 
 int main(){
-    int s_length=15,x_pos,y_pos,x_point,y_point;
+    int s_length=1,x_pos,y_pos,x_point,y_point;
     int i=0,time_laps,score=0,dif,temp,temp2;
     char c;
     pthread_t t;
