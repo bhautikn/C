@@ -97,7 +97,7 @@ void print_star(int *x,int *y){
     gotoxy(*x,*y);
     printf("\033[0;31m");
     printf("\e[1m");
-    printf("*\n");
+    printf("●\n");
     printf("\e[m");
     printf("\033[0m");
 }
@@ -166,7 +166,7 @@ int main(){
     for (int i=4;i<=s_length+4;++i)
     {
         gotoxy(i,y_pos);
-        printf("*\n");
+        printf("●\n");
         snake_potion[i-3][0]=i;
         snake_potion[i-3][1]=y_pos;
     }
@@ -223,7 +223,7 @@ int main(){
         {
             x_pos++; 
             gotoxy(x_pos,y_pos);
-            printf("*\n");
+            printf("●\n");
             usleep(time_laps-10000);
             set_potion(x_pos,y_pos,s_length);
             gotoxy(snake_potion[0][0],snake_potion[0][1]);
@@ -234,7 +234,7 @@ int main(){
         {
             y_pos++;
             gotoxy(x_pos,y_pos);
-            printf("*\n");
+            printf("●\n");
             usleep(time_laps);
             set_potion(x_pos,y_pos,s_length);
             gotoxy(snake_potion[0][0],snake_potion[0][1]);
@@ -244,7 +244,7 @@ int main(){
 
             y_pos--;
             gotoxy(x_pos,y_pos);
-            printf("*\n");
+            printf("●\n");
             usleep(time_laps);
             set_potion(x_pos,y_pos,s_length);
             gotoxy(snake_potion[0][0],snake_potion[0][1]);
@@ -254,7 +254,7 @@ int main(){
         {
             x_pos--;
             gotoxy(x_pos,y_pos);
-            printf("*\n");
+            printf("●\n");
             usleep(time_laps-10000);
             set_potion(x_pos,y_pos,s_length);
             gotoxy(snake_potion[0][0],snake_potion[0][1]);
